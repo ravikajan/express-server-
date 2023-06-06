@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
 const api = express.Router();
 
 api.get('/hello', (req, res) => {
-  res.status(200).send({ message: 'hello world' });
+  res.status(200).send({ message: 'We’ve been the UK’s #1 clinic four years in a row and we’re no #1 for the hair transplant, too.' });
 });
 
 // Version the api
