@@ -3,10 +3,6 @@ import express from 'express';
 export const app = express();
 
 
-app.use(express.json());
-app.use(express.raw({ type: 'application/vnd.custom-type' }));
-app.use(express.text({ type: 'text/html' }));
-
 // Healthcheck endpoint
 app.get('/', (req, res) => {
   res.status(200).send({ status: 'ok' });
